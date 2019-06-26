@@ -57,7 +57,7 @@ var commands = [{
         name: "concert-this",
         desc: "Search the Bands in Town API for upcoming concert dates for an artist or band.",
         util: function (query) {
-            
+
             query = query.replace(/["]+/g, '');
 
             if (query) {
@@ -173,6 +173,19 @@ var commands = [{
 performCommand(inputCommand, inputParameter);
 
 
+// console.log(`Rows: ${process.stdout.rows}, Cols: ${process.stdout.columns}`)
+
+// for (let y = 0; y < process.stdout.rows; y++) {
+//     var temp = ""
+//     for (let i = 0; i < process.stdout.columns; i++) {
+//         temp += "X"
+
+//     }
+//     console.log(temp)
+// }
+
+
+
 function performCommand(input, parameter) {
 
     var command = commands.find(element => {
@@ -222,10 +235,11 @@ function formatString(len, string = "", sidebar = "|X|") {
     return output;
 }
 
-function displayOutput(obj, title = "TITLE") {
 
+
+function displayOutput(obj, title = "TITLE") {
     var lineBreak = "";
-    var maxLength = 20;
+    var maxLength = 0;
 
     if (title.length > maxLength) maxLength = title.length;
 
@@ -235,15 +249,23 @@ function displayOutput(obj, title = "TITLE") {
             obj[key] = "null"
         }
 
-
         if (key.length + 2 > maxLength) maxLength = key.length + 2;
         if (obj[key].length > maxLength) {
-            maxLength = obj[key].length;
+            if(obj[key].length > process.stdout.columns-20){
+                obj[key] = getStringArray(obj[key], (maxLength > 100) ? maxLength : 100);
+                maxLength = (maxLength > 100) ? maxLength : 120;
+            }else{
+                maxLength = obj[key].length;
+            }
+            
         }
     }
 
+    // console.log(maxLength)
 
-    maxLength += 20;
+
+
+
     lineBreak = getLineBreak(maxLength);
 
     console.log();
@@ -255,9 +277,53 @@ function displayOutput(obj, title = "TITLE") {
     console.log(formatString(maxLength));
     for (const key in obj) {
         console.log(formatString(maxLength, `[${key}]`));
-        console.log(formatString(maxLength, obj[key]));
+
+        if(Array.isArray(obj[key])){
+            obj[key].forEach(line => {
+                console.log(formatString(maxLength, line));
+            });
+        }else{
+            console.log(formatString(maxLength, obj[key]));
+        }
+        
         console.log(formatString(maxLength));
     }
     console.log(formatString(maxLength, lineBreak));
+
+}
+
+function getStringArray(text, len) {
+    var output = [];
+    wrapText(text, len)
+
+    return output;
+
+    function wrapText(text, len) {
+        if (text.length > len) {
+            for (let index = len - 1; index >= 0; index--) {
+
+                if (text.charAt(index) === " ") {
+                    output.push(text.slice(0, index));
+
+                    text = text.slice(index + 1);
+                    wrapText(text, len)
+                    break;
+                } else if (index === 0) {
+                    output.push(text.slice(0, len));
+                    text = text.slice(len);
+                    wrapText(text, len)
+                    break;
+                }
+            }
+
+        } else {
+            output.push(text);
+
+            return output;
+        }
+
+    }
+
+
 
 }
