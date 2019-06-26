@@ -8,169 +8,192 @@ var axios = require("axios");
 var moment = require("moment");
 var fs = require("fs");
 
-
-var command = process.argv[2];
-var parameter = process.argv.slice(3).join(" ");
+var inputCommand = process.argv[2];
+var inputParameter = process.argv.slice(3).join(" ");
 var output = {};
 
-performCommand(command, parameter);
 
-function performCommand(command, parameter) {
+var commands = [{
+        name: "spotify-this-song",
+        desc: "Search Spotify for information about a song.",
+        util: function (query) {
+            if (query) {
+                spotify.search({
+                    type: 'track',
+                    query: query
+                }).then(function (response) {
 
-    switch (command) {
-        case "concert-this":
-            getConcertInfo(parameter);
-            break;
-        case "spotify-this-song":
-            getSpotifyInfo(parameter);
-            break;
-        case "movie-this":
-            getMovieInfo(parameter);
-            break;
-        case "do-what-it-says":
-            readFileForSpotify();
-            break;
 
-        default:
-            output = {
-                Error: "Not a valid command",
-                Use: "node liri.js <command>",
-                Commands: "spotify-this-song <song title> | concert-this <artist name> | movie-this <movie-title> | do-what-it-says"
+                    if (response.tracks.items.length > 0) {
+
+                        output["Song"] = response.tracks.items[0].name;
+
+
+                        output["Artists"] = response.tracks.items[0].artists.map(function (artist) {
+                            return artist.name;
+                        }).join(" | ");
+                        output["Album"] = response.tracks.items[0].album.name;
+                        output["Preview Url"] = response.tracks.items[0].preview_url;
+                        displayOutput(output, "SPOTIFY INFORMATION");
+
+                    } else {
+                        output.Error = `Couldn't find a match for ${query}!`
+                        displayOutput(output, "ERROR");
+                    }
+
+
+                }).catch(function (err) {
+                    console.log(err);
+                })
+            } else {
+
+                output.Error = "You must enter a song to search";
+                displayOutput(output, "ERROR");
 
             }
-            displayObject(output);
-            break;
-    }
-}
-
-function readFileForSpotify() {
-    fs.readFile("random.txt", "utf8", function (error, data) {
-        if (error) {
-            return console.log(error);
         }
-
-        var dataArray = data.split(",");
-        console.log(dataArray);
-
-        performCommand(dataArray[0], dataArray[1]);
-
-    });
-}
-
-
-
-function getConcertInfo(query) {
-    var queryUrl = `https://rest.bandsintown.com/artists/${query}/events?app_id=codingbootcamp`
-
-
-    axios.get(queryUrl).then(function (response) {
-
-        if (response.data.length > 0) {
-            response.data.forEach(event => {
-
-                output["Venue"] = event.venue.name;
-                output["Location"] = `${event.venue.city} ${event.venue.region}, ${event.venue.country}`;
-                output["Date"] = moment(event.datetime).format("MM/DD/YYYY");
-                displayObject(output)
-            });
-        } else {
-            output["Sorry"] = `We couldn't find any upcoming events for ${query}`;
-            displayObject(output)
-
-        }
-
-        ;
-
-    }).catch(function (err) {
-        console.log(err)
-
-    })
-}
-
-function getSpotifyInfo(query) {
-
-
-    if (query) {
-        spotify.search({
-            type: 'track',
-            query: query
-        }).then(function (response) {
-
+    },
+    {
+        name: "concert-this",
+        desc: "Search the Bands in Town API for upcoming concert dates for an artist or band.",
+        util: function (query) {
             
+            query = query.replace(/["]+/g, '');
+
+            if (query) {
+                var queryUrl = `https://rest.bandsintown.com/artists/${query}/events?app_id=codingbootcamp`
 
 
-            if (response.tracks.items.length > 0) {
+                axios.get(queryUrl).then(function (response) {
 
-                output["Song"] = response.tracks.items[0].name;
 
-                
-                output["Artists"] = response.tracks.items[0].artists.map(function (artist){
-                    return artist.name;
-                }).join(" | ");
-                output["Album"] = response.tracks.items[0].album.name;
-                output["Preview Url"] = response.tracks.items[0].preview_url;
+                    if (response.data.length > 0) {
+                        response.data.forEach(event => {
+
+                            output["Venue"] = event.venue.name;
+                            output["Location"] = `${event.venue.city} ${event.venue.region}, ${event.venue.country}`;
+                            output["Date"] = moment(event.datetime).format("MM/DD/YYYY");
+                            displayOutput(output, "CONCERT INFORMATION")
+                        });
+                    } else {
+                        output["No Events"] = `We couldn't find any upcoming events for ${query}`;
+                        displayOutput(output, "ERROR")
+
+                    }
+
+                    ;
+
+                }).catch(function (err) {
+                    console.log(err)
+
+                })
 
             } else {
-                output.Error = `Couldn't find a match for ${query}!`
+                output.Error = "You must enter an artist or band to search";
+                displayOutput(output, "ERROR");
             }
+        }
 
-            displayObject(output);
+    },
+    {
+        name: "movie-this",
+        desc: "Search the OMDB API for information about a movie",
+        util: function (query) {
+            if (query) {
+                var queryUrl = `https://www.omdbapi.com/?apikey=${omdbKey}&t=${query}`;
+
+                axios.get(queryUrl).then(function (response) {
+
+                    if (response.data.Response === "True") {
+                        if (response.data.Title)
+                            output["Title"] = response.data.Title;
+                        if (response.data.Year)
+                            output["Year"] = response.data.Year;
+                        if (response.data.Ratings[0])
+                            output["IMDB Rating"] = response.data.Ratings[0].Value;
+                        if (response.data.Ratings[1])
+                            output["Rotten Tomatoes Rating"] = response.data.Ratings[1].Value;
+                        if (response.data.Country)
+                            output["Country"] = response.data.Country;
+                        if (response.data.Language)
+                            output["Language"] = response.data.Language;
+                        if (response.data.Actors)
+                            output["Actors"] = response.data.Actors;
+                        if (response.data.Plot)
+                            output["Plot"] = response.data.Plot;
+                        displayOutput(output, "MOVIE INFORMATION");
+                    } else {
+                        output["Error"] = `Couldn't find a match for ${query}!`
+                        displayOutput(output, "ERROR");
+                    }
+
+                }).catch(function (err) {
+                    console.log(err)
+
+                })
+            } else {
+
+                output.Error = "You must enter a movie title to search";
+                displayOutput(output, "ERROR");
+
+            }
+        }
+    },
+    {
+        name: "do-what-it-says",
+        desc: "Run a random command to get random information :)",
+        util: function (query) {
+            fs.readFile("random.txt", "utf8", function (error, data) {
+                if (error) {
+                    return console.log(error);
+                }
+                var rows = data.split("\r\n");
+
+                var commandIndex = Math.floor(Math.random() * rows.length);
+                var parameterIndex = Math.floor(Math.random() * rows[commandIndex].split(",").slice(1).length);
+                var command = (rows[commandIndex].split(",")[0]).toString();
+                var parameter = (rows[commandIndex].split(",").slice(1)[parameterIndex]).toString();
+
+                console.log(commandIndex)
+                console.log(parameterIndex)
+
+                console.log(command)
+                console.log(parameter)
 
 
-        }).catch(function (err) {
-            console.log(err);
-        })
+
+                performCommand(command, parameter);
+
+            });
+
+        }
+    },
+]
+
+performCommand(inputCommand, inputParameter);
+
+
+function performCommand(input, parameter) {
+
+    var command = commands.find(element => {
+        if (element.name === input) {
+            return element;
+        }
+
+    });
+    if (command) {
+        command.util(parameter);
     } else {
+        output = {
+            Error: "Not a valid command",
+            Use: "node liri.js <command>",
+            Commands: "spotify-this-song <song title> | concert-this <artist name> | movie-this <movie-title> | do-what-it-says"
 
-        output.Error = "You must enter a song to search!";
-        displayObject(output);
-
+        }
+        displayOutput(output, "ERROR");
     }
 
 }
-
-function getMovieInfo(query) {
-    var queryUrl = `https://www.omdbapi.com/?apikey=${omdbKey}&t=${query}`;
-
-
-    axios.get(queryUrl).then(function (response) {
-
-        if (response.data.Response === "True") {
-            if (response.data.Title)
-                output["Title"] = response.data.Title;
-            if (response.data.Year)
-                output["Year"] = response.data.Year;
-            if (response.data.Ratings[0])
-                output["IMDB Rating"] = response.data.Ratings[0].Value;
-            if (response.data.Ratings[1])
-                output["Rotten Tomatoes Rating"] = response.data.Ratings[1].Value;
-            if (response.data.Country)
-                output["Country"] = response.data.Country;
-            if (response.data.Language)
-                output["Language"] = response.data.Language;
-            if (response.data.Actors)
-                output["Actors"] = response.data.Actors;
-            if (response.data.Plot)
-                output["Plot"] = response.data.Plot;
-        } else {
-            output["Error"] = `Couldn't find a match for ${query}!`
-        }
-
-
-        displayObject(output);
-
-
-    }).catch(function (err) {
-        console.log(err)
-
-    })
-
-
-
-}
-
-
-
 
 
 function getLineBreak(num) {
@@ -199,24 +222,35 @@ function formatString(len, string = "", sidebar = "|X|") {
     return output;
 }
 
-function displayObject(obj) {
+function displayOutput(obj, title = "TITLE") {
+
     var lineBreak = "";
     var maxLength = 20;
 
+    if (title.length > maxLength) maxLength = title.length;
+
     for (const key in obj) {
-        if (key.length + 2 > maxLength) maxLength = key.length + 2;
+
         if (obj[key] === null) {
-            if (maxLength < 4) maxLength = 4;
-        } else if (obj[key].length > maxLength) {
+            obj[key] = "null"
+        }
+
+
+        if (key.length + 2 > maxLength) maxLength = key.length + 2;
+        if (obj[key].length > maxLength) {
             maxLength = obj[key].length;
         }
     }
 
-    maxLength += 20;
 
+    maxLength += 20;
     lineBreak = getLineBreak(maxLength);
 
     console.log();
+    console.log(formatString(maxLength, lineBreak));
+    console.log(formatString(maxLength));
+    console.log(formatString(maxLength, title));
+    console.log(formatString(maxLength));
     console.log(formatString(maxLength, lineBreak));
     console.log(formatString(maxLength));
     for (const key in obj) {
