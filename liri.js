@@ -56,6 +56,12 @@ var commands = [{
                         //Call display function with the output object and a title param.
                         displayOutput(output, "SPOTIFY INFORMATION");
 
+                        log(`\nspotify-this-song ${query} [${moment().format("MM/DD/YYYY-hh:mmA")}]`);
+                        log("------------------------------------------");
+                        log(output);
+                        log("------------------------------------------");
+
+
                     } else {
                         //If no data was found we update the output object with an error message and display it.
                         output.Error = `Couldn't find a match for ${query}!`
@@ -105,6 +111,13 @@ var commands = [{
                             output["Date"] = moment(event.datetime).format("MM/DD/YYYY");
                             //Display the output object.
                             displayOutput(output, "CONCERT INFORMATION")
+
+                            log(`\nconcert-this ${query} [${moment().format("MM/DD/YYYY-hh:mmA")}]`);
+                            log("------------------------------------------");
+                            log(output);
+                            log("------------------------------------------");
+
+
                         });
                     } else {
                         //Error display if no events were found
@@ -113,7 +126,8 @@ var commands = [{
 
                     }
 
-                    ;
+
+
 
                 }).catch(function (err) {
                     // If the axios call fails and throws an error, console log it.
@@ -162,6 +176,11 @@ var commands = [{
                         if (response.data.Plot)
                             output["Plot"] = response.data.Plot;
                         displayOutput(output, "MOVIE INFORMATION");
+                        log(`\nmovie-this ${query} [${moment().format("MM/DD/YYYY-hh:mmA")}]`);
+                        log("------------------------------------------");
+                        log(output);
+                        log("------------------------------------------");
+
                     } else {
                         //If there isn't a match for the search param, display and error.
                         output["Error"] = `Couldn't find a match for ${query}!`
@@ -243,11 +262,11 @@ function performCommand(input, parameter) {
 
             }
             displayOutput(output, "ERROR");
-        }else{
+        } else {
             getUserInput();
         }
 
-        
+
     }
 
 }
@@ -471,6 +490,31 @@ function getStringArray(text, len) {
 
     }
 
+}
+
+function log(output) {
+    var text = "";
+
+    if (typeof output === "object") {
+        for (const key in output) {
+            text += `\n[${key}]`
+            text += `\n${output[key]}`;
+        }
+
+    } else if (Array.isArray(output)) {
+        output.forEach(e => {
+            text += `\n${e}`;
+        });
+    } else {
+        text += `\n${output}`;
+    }
 
 
+
+
+    fs.appendFileSync("log.txt", text, function (err) {
+        if (err) {
+            console.log(err);
+        }
+    })
 }

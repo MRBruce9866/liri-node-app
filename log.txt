@@ -1,0 +1,331 @@
+
+
+concert-this Tech N9ne [06/27/2019-04:57PM]
+------------------------------------------
+[Venue]
+Myth Live
+[Location]
+Saint Paul MN, United States
+[Date]
+10/05/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+København V , Denmark
+[Date]
+08/14/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Odense , Denmark
+[Date]
+08/15/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Hip Hop Kemp Music Festival 
+[Location]
+Hradec Kralove , Czech Republic
+[Date]
+08/16/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Royal Arena Festival
+[Location]
+Orpund , Switzerland
+[Date]
+08/17/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe 
+[Location]
+Glasgow , United Kingdom
+[Date]
+08/19/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Leeds , United Kingdom
+[Date]
+08/20/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Birmingham , United Kingdom
+[Date]
+08/21/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+München , Germany
+[Date]
+08/22/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Stuttgart , Germany
+[Date]
+08/23/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Frankfurt Am Main , Germany
+[Date]
+08/24/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Hamburg , Germany
+[Date]
+08/25/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019
+[Location]
+Köln , Germany
+[Date]
+08/28/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Junkyard
+[Location]
+Dortmund , Germany
+[Date]
+08/30/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Tanzbar Palette
+[Location]
+Schwarzenbach An Der Saale , Germany
+[Date]
+08/31/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:58PM]
+------------------------------------------
+[Venue]
+Myth Live
+[Location]
+Saint Paul MN, United States
+[Date]
+10/05/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+København V , Denmark
+[Date]
+08/14/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Odense , Denmark
+[Date]
+08/15/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Hip Hop Kemp Music Festival 
+[Location]
+Hradec Kralove , Czech Republic
+[Date]
+08/16/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Royal Arena Festival
+[Location]
+Orpund , Switzerland
+[Date]
+08/17/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe 
+[Location]
+Glasgow , United Kingdom
+[Date]
+08/19/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Leeds , United Kingdom
+[Date]
+08/20/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Birmingham , United Kingdom
+[Date]
+08/21/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+München , Germany
+[Date]
+08/22/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Stuttgart , Germany
+[Date]
+08/23/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Frankfurt Am Main , Germany
+[Date]
+08/24/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019 Europe
+[Location]
+Hamburg , Germany
+[Date]
+08/25/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tech N9ne Live 2019
+[Location]
+Köln , Germany
+[Date]
+08/28/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Junkyard
+[Location]
+Dortmund , Germany
+[Date]
+08/30/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Tanzbar Palette
+[Location]
+Schwarzenbach An Der Saale , Germany
+[Date]
+08/31/2019
+------------------------------------------
+
+concert-this Tech N9ne [06/27/2019-04:59PM]
+------------------------------------------
+[Venue]
+Myth Live
+[Location]
+Saint Paul MN, United States
+[Date]
+10/05/2019
+------------------------------------------
+
+movie-this Avengers [06/27/2019-04:59PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
