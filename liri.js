@@ -233,15 +233,21 @@ function performCommand(input, parameter) {
     if (command) {
         command.util(parameter);
     } else {
-        //If the command was not found, display and error to the user.
-        // output = {
-        //     Error: "Not a valid command",
-        //     Use: "node liri.js <command>",
-        //     Commands: "spotify-this-song <song title> | concert-this <artist name> | movie-this <movie-title> | do-what-it-says"
 
-        // }
-        // displayOutput(output, "ERROR");
-        getUserInput();
+        if (input) {
+            //If the command was not found, display and error to the user.
+            output = {
+                Error: "Not a valid command",
+                Use: "node liri.js <command>",
+                Commands: "spotify-this-song <song title> | concert-this <artist name> | movie-this <movie-title> | do-what-it-says"
+
+            }
+            displayOutput(output, "ERROR");
+        }else{
+            getUserInput();
+        }
+
+        
     }
 
 }
@@ -262,7 +268,7 @@ function getUserInput() {
             })
 
         }]).then(function (answer) {
-            //This is the return promise of the prompt.
+        //This is the return promise of the prompt.
 
         //We search the commands array for an object with a matching desc. and set that to a variable to be used later.
         var command = commands.find(function (ele) {
