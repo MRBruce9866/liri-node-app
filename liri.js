@@ -9,6 +9,7 @@ var omdbKey = keys.omdb;
 var axios = require("axios");
 var moment = require("moment");
 var fs = require("fs");
+var inquirer = require("inquirer");
 
 // get user input via command-line arguments
 var inputCommand = process.argv[2];
@@ -28,6 +29,8 @@ var commands = [{
         name: "spotify-this-song",
         //Short description of the command and what it does.
         desc: "Search Spotify for information about a song.",
+        //This is used by the inquired to format a question.
+        type: "song",
         //  This util function performs a search of the spotify api to gather information about a song
         util: function (query) {
             //Check if the query is empty. (User did not enter a parameter)
@@ -40,7 +43,7 @@ var commands = [{
 
                     //Check if the response has the data we want.
                     if (response.tracks.items.length > 0) {
-                        
+
                         //Update the output object with song information
                         output["Song"] = response.tracks.items[0].name;
                         //The artists array holds objects for each artist. I use the .map function to pull
@@ -76,6 +79,7 @@ var commands = [{
         //This command searches the Bands in Town api for any upcoming concert dates for an artist or band.
         name: "concert-this",
         desc: "Search the Bands in Town API for upcoming concert dates for an artist or band.",
+        type: "artist/band",
         util: function (query) {
             //The api will give return an error object if the parameter has "". This removes double quotes from the string.
             //This regex format was found online and I need to understand how to use this better. 
@@ -129,6 +133,7 @@ var commands = [{
         //This command uses the OMDB Api to get information about a movie.
         name: "movie-this",
         desc: "Search the OMDB API for information about a movie",
+        type: "movie",
         util: function (query) {
             //Check if the user entered a search param.
             if (query) {
@@ -229,16 +234,63 @@ function performCommand(input, parameter) {
         command.util(parameter);
     } else {
         //If the command was not found, display and error to the user.
-        output = {
-            Error: "Not a valid command",
-            Use: "node liri.js <command>",
-            Commands: "spotify-this-song <song title> | concert-this <artist name> | movie-this <movie-title> | do-what-it-says"
+        // output = {
+        //     Error: "Not a valid command",
+        //     Use: "node liri.js <command>",
+        //     Commands: "spotify-this-song <song title> | concert-this <artist name> | movie-this <movie-title> | do-what-it-says"
 
-        }
-        displayOutput(output, "ERROR");
+        // }
+        // displayOutput(output, "ERROR");
+        getUserInput();
     }
 
 }
+//Function to get user input via inquirer
+function getUserInput() {
+    //call the inquirer prompt method to get prompt the user for a command
+    inquirer.prompt(
+        [{
+            //variable to store the answer from the user.
+            name: "command",
+            //message to display to the user.
+            message: "Welcome to the liri app. Choose a command to run.",
+            //We will use a list type to allow choices to be chosen from the commands array.
+            type: 'list',
+            //This pulls the desc. from each of the command objects in the array and allows the user to select the one they want.
+            choices: commands.map(cmd => {
+                return cmd.desc
+            })
+
+        }]).then(function (answer) {
+            //This is the return promise of the prompt.
+
+        //We search the commands array for an object with a matching desc. and set that to a variable to be used later.
+        var command = commands.find(function (ele) {
+            if (answer.command === ele.desc) {
+                return ele;
+            }
+        });
+        //This second prompt is used for getting the search parameter.
+        inquirer.prompt(
+            [{
+                name: "parameter",
+                //We use the type value of the selected command to display the correct context to the user.
+                message: `What ${command.type} would you like information about?`,
+                //We allow the user to type there input.
+                type: 'input',
+
+
+            }]).then(function (answer) {
+            //When then call the util method of the selected command with the given parameter.
+            command.util(answer.parameter);
+        });
+
+
+    });
+
+
+}
+
 
 
 //Helper function to create a 'line break' display.
@@ -272,7 +324,7 @@ function formatString(len, string = "", sidebar = "|X|") {
             //The spaces will now be added to the right side of the string.
         } else {
             //We continue adding spaces until the output length matches the len passed in.
-            
+
             output += " ";
         }
     }
@@ -289,7 +341,8 @@ function displayOutput(obj, title = "TITLE") {
 
     //Initialize variables.
     var lineBreak = "";
-    var maxLength = 0;
+    //Initialize the maxLength to the minimum size.
+    var maxLength = 30;
     //We will update the maxLength based on the data to be display.
     //The maxLength will, for the most part, match the longest string in the output object.
     if (title.length > maxLength) maxLength = title.length;
@@ -314,15 +367,18 @@ function displayOutput(obj, title = "TITLE") {
             I used hard-coded numbers here to try and keep the display from getting too wide, However this still has issues when the terminal 
             screen is too narrow.
             */
-            if(obj[key].length > process.stdout.columns-20){
+            if (obj[key].length > process.stdout.columns - 20) {
                 obj[key] = getStringArray(obj[key], (maxLength > 100) ? maxLength : 100);
                 maxLength = (maxLength > 100) ? maxLength : 120;
-            }else{
+            } else {
                 maxLength = obj[key].length;
             }
-            
+
         }
     }
+
+    //Creating a 1 character padding around the longest string in the object.
+    maxLength += 2;
 
     //We create a line break based on the maxLength.
     lineBreak = getLineBreak(maxLength);
@@ -345,11 +401,11 @@ function displayOutput(obj, title = "TITLE") {
         console.log(formatString(maxLength, `[${key}]`));
 
         //If the value is an array (word wrap), we loop through the array and display each line seperately. 
-        if(Array.isArray(obj[key])){
+        if (Array.isArray(obj[key])) {
             obj[key].forEach(line => {
                 console.log(formatString(maxLength, line));
             });
-        }else{
+        } else {
             //If the value is not an array, we assume it's a string and display it in one line.
             console.log(formatString(maxLength, obj[key]));
         }
