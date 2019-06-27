@@ -329,3 +329,405 @@ Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
 [Plot]
 Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
 ------------------------------------------
+
+spotify-this-song Waterfalls [06/27/2019-06:25PM]
+------------------------------------------
+[Song]
+Waterfalls
+[Artists]
+TLC
+[Album]
+Crazysexycool
+[Preview Url]
+https://p.scdn.co/mp3-preview/0d6910587f1e6081f7016d8bc2ec7ab94cf5f0fe?cid=737545dc50fa44b3b3bd69a4a46718ba
+------------------------------------------
+
+concert-this NF [06/27/2019-06:25PM]
+------------------------------------------
+[Venue]
+Lollapalooza
+[Location]
+Chicago IL, United States
+[Date]
+08/02/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Stage AE
+[Location]
+Pittsburgh PA, United States
+[Date]
+09/12/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+DeltaPlex Arena & Conference Center
+[Location]
+Grand Rapids MI, United States
+[Date]
+09/13/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Michigan Lottery Amphitheater at Freedom Hill
+[Location]
+Sterling Heights MI, United States
+[Date]
+09/14/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Express Live!
+[Location]
+Columbus OH, United States
+[Date]
+09/15/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+The Met Philadelphia
+[Location]
+Philadelphia PA, United States
+[Date]
+09/17/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Toyota Oakdale Theatre
+[Location]
+Wallingford CT, United States
+[Date]
+09/18/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Charlotte Metro Credit Union Amphitheatre
+[Location]
+Charlotte NC, United States
+[Date]
+09/20/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Red Hat Amphitheater
+[Location]
+Raleigh NC, United States
+[Date]
+09/21/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Marathon Music Works
+[Location]
+Nashville TN, United States
+[Date]
+09/23/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Marathon Music Works
+[Location]
+Nashville TN, United States
+[Date]
+09/24/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Old Forester's Paristown Hall
+[Location]
+Louisville KY, United States
+[Date]
+09/26/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Clyde Theatre
+[Location]
+Fort Wayne IN, United States
+[Date]
+09/27/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Armory
+[Location]
+Minneapolis MN, United States
+[Date]
+09/28/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Burton Cummings Theatre
+[Location]
+Winnipeg , Canada
+[Date]
+09/29/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Edmonton Convention Centre
+[Location]
+Edmonton , Canada
+[Date]
+10/01/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Grey Eagle Event Centre
+[Location]
+Calgary , Canada
+[Date]
+10/02/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+PNE Forum
+[Location]
+Vancouver , Canada
+[Date]
+10/03/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+CenturyLink Field
+[Location]
+Seattle WA, United States
+[Date]
+10/05/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Toyota Center Kennewick
+[Location]
+Kennewick WA, United States
+[Date]
+10/06/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Moda Center
+[Location]
+Portland OR, United States
+[Date]
+10/08/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Revolution Concert House
+[Location]
+Garden City ID, United States
+[Date]
+10/09/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+The Great Saltair
+[Location]
+Magna UT, United States
+[Date]
+10/11/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Red Rocks Amphitheatre
+[Location]
+Morrison CO, United States
+[Date]
+10/13/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Uptown Theatre
+[Location]
+Kansas City MO, United States
+[Date]
+10/15/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Revention Music Center
+[Location]
+Houston TX, United States
+[Date]
+10/18/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+The Criterion
+[Location]
+Oklahoma City OK, United States
+[Date]
+10/19/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+The Pavilion at Toyota Music Factory
+[Location]
+Irving TX, United States
+[Date]
+10/20/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+Comerica Theatre
+[Location]
+Phoenix AZ, United States
+[Date]
+10/22/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+House of Blues Anaheim
+[Location]
+Anaheim CA, United States
+[Date]
+10/24/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+House of Blues Anaheim
+[Location]
+Anaheim CA, United States
+[Date]
+10/25/2019
+------------------------------------------
+
+concert-this NF [06/27/2019-06:26PM]
+------------------------------------------
+[Venue]
+San Jose Civic
+[Location]
+San Jose CA, United States
+[Date]
+10/26/2019
+------------------------------------------
+
+spotify-this-song The Sign Ace of Base [06/27/2019-06:33PM]
+------------------------------------------
+[Error]
+You must enter a song to search
+[Song]
+The Sign
+[Artists]
+Ace of Base
+[Album]
+The Sign (US Album) [Remastered]
+[Preview Url]
+https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=737545dc50fa44b3b3bd69a4a46718ba
+------------------------------------------
+
+spotify-this-song The Sign Ace of Base [06/27/2019-06:34PM]
+------------------------------------------
+[Song]
+The Sign
+[Artists]
+Ace of Base
+[Album]
+The Sign (US Album) [Remastered]
+[Preview Url]
+https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=737545dc50fa44b3b3bd69a4a46718ba
+------------------------------------------
+
+movie-this Mr. Nobody [06/27/2019-06:37PM]
+------------------------------------------
+[Title]
+Mr. Nobody
+[Year]
+2009
+[IMDB Rating]
+7.8/10
+[Rotten Tomatoes Rating]
+67%
+[Country]
+Belgium, Germany, Canada, France, USA, UK
+[Language]
+English, Mohawk
+[Actors]
+Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+[Plot]
+A boy stands on a station platform as a train is about to leave. Should he go with his mother or,stay with his father? Infinite possibilities arise from this decision. As long as he doesn't,choose, anything is possible.
+------------------------------------------
+
+spotify-this-song The Sign Ace of Base [06/27/2019-06:37PM]
+------------------------------------------
+[Song]
+The Sign
+[Artists]
+Ace of Base
+[Album]
+The Sign (US Album) [Remastered]
+[Preview Url]
+https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=737545dc50fa44b3b3bd69a4a46718ba
+------------------------------------------
+
+spotify-this-song The Sign Ace of Base [06/27/2019-06:38PM]
+------------------------------------------
+[Song]
+The Sign
+[Artists]
+Ace of Base
+[Album]
+The Sign (US Album) [Remastered]
+[Preview Url]
+https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=737545dc50fa44b3b3bd69a4a46718ba
+------------------------------------------

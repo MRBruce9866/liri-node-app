@@ -74,9 +74,8 @@ var commands = [{
                     console.log(err);
                 })
             } else {
-                //If no parameter was provided, update out with an error message and display it. 
-                output.Error = "You must enter a song to search";
-                displayOutput(output, "ERROR");
+                //If no parameter was provided, we use a default song to search. 
+                performCommand("spotify-this-song","The Sign Ace of Base")
 
             }
         }
@@ -193,9 +192,8 @@ var commands = [{
 
                 })
             } else {
-                //if the user didn't enter a movie title, display an error.
-                output.Error = "You must enter a movie title to search";
-                displayOutput(output, "ERROR");
+                //if the user didn't enter a movie title, display the default movie.
+                performCommand("movie-this","Mr. Nobody")
 
             }
         }
