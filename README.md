@@ -9,13 +9,13 @@ The liri-node app allows users to retrieve information on songs, movies, and con
 If no arguments are given in the command-line, the user is automatically prompted to choose between a few options to help navigate them through the application. 
 
 ![Image](images/noInput.png)
-_First Prompt_
+
 
 ![Image](images/noInput2.png)
-_Second Prompt_
+
 
 ![Image](images/noInput3.png)
-_Output_
+
 
 
 ### __spotify-this-song__ _>Song Title<_
@@ -28,7 +28,7 @@ The spotify-this-song command uses the Spotify API to provide some information a
 
 
 ![Image](images/spotify.png)
-_spotify-this-song Lose Yourself_
+
 
 
 
@@ -40,7 +40,7 @@ The concert-this command uses axios call to the Bands in Town API to provide a l
 * Date
 
 ![Image](images/concert.png)
-_concert-this Tech N9ne_
+
 
 ### __movie-this__ _>Movie Title<_
 The movie-this command uses axios call to the OMDB API to provide information about a movie. 
@@ -55,13 +55,13 @@ The movie-this command uses axios call to the OMDB API to provide information ab
 * Plot
 
 ![Image](images/movie.png)
-_movie-this The Avengers_
+
 
 ### __do-what-it-says__
 The do-what-it-says command takes no parameters from the user directly. Instead, it chooses at random one of the other commands to call and passes in a random search parameter pulled from a predefined list in the random.txt file.
 
 ![Image](images/random.png)
-_do-what-it-says_
+
 
 ![Image](images/random2.png)
--random.txt-
+
