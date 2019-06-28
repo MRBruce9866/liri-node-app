@@ -391,8 +391,8 @@ function displayOutput(obj, title = "TITLE") {
             screen is too narrow.
             */
             if (obj[key].length > process.stdout.columns - 20) {
-                obj[key] = getStringArray(obj[key], (maxLength > 100) ? maxLength : 100);
-                maxLength = (maxLength > 100) ? maxLength : 120;
+                obj[key] = getStringArray(obj[key], process.stdout.columns - 20);
+                maxLength = process.stdout.columns - 20;
             } else {
                 maxLength = obj[key].length;
             }
@@ -439,7 +439,6 @@ function displayOutput(obj, title = "TITLE") {
     console.log(formatString(maxLength, lineBreak));
 
 }
-
 //Helper function to break up a string into smaller parts to display. It returns an array of smaller strings. (Word Wrap)
 //This is also very sloppy.
 function getStringArray(text, len) {

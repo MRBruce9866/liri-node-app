@@ -731,3 +731,431 @@ The Sign (US Album) [Remastered]
 [Preview Url]
 https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=737545dc50fa44b3b3bd69a4a46718ba
 ------------------------------------------
+
+spotify-this-song The Sign Ace of Base [06/27/2019-10:43PM]
+------------------------------------------
+[Song]
+The Sign
+[Artists]
+Ace of Base
+[Album]
+The Sign (US Album) [Remastered]
+[Preview Url]
+https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=737545dc50fa44b3b3bd69a4a46718ba
+------------------------------------------
+
+spotify-this-song Lose Yourself [06/27/2019-10:44PM]
+------------------------------------------
+[Song]
+Lose Yourself - From "8 Mile" Soundtrack
+[Artists]
+Eminem
+[Album]
+Curtain Call
+[Preview Url]
+null
+------------------------------------------
+
+spotify-this-song Lose Yourself [06/27/2019-10:45PM]
+------------------------------------------
+[Song]
+Lose Yourself - From "8 Mile" Soundtrack
+[Artists]
+Eminem
+[Album]
+Curtain Call
+[Preview Url]
+null
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:46PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:49PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:49PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop,the mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:49PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop,the mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:51PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:51PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris,Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn,to fight as a team if they are going to stop the,mischievous Loki and his alien army from enslaving,humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:52PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Rober,t,Downe,y,Jr.,,Chris,,Evans,,,Mark,Ruffa,lo,,Chris,,Hemsw,orth
+[Plot]
+Earth,'s,might,iest,heroe,s,must,come,toget,her,and,learn, to,fight, as,a,team,if,they,are,going, to,stop,the,misch,ievou,s,Loki,and,his,alien,,army,from,ensla,ving,human,ity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:52PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a,team if they are going to stop the mischievous Loki and his alien,army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:52PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:53PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they,are going to stop the mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:53PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and,learn to fight as a team if they are going to,stop the mischievous Loki and his alien army,from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:53PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr.,,Chris Evans, Mark,Ruffalo, Chris,Hemsworth
+[Plot]
+Earth's mightiest,heroes must come,together and learn,to fight as a team,if they are going,to stop the,mischievous Loki,and his alien army,from enslaving,humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:53PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+
+[Plot]
+
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:54PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+
+[Plot]
+
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:54PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:54PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo,,Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together,and learn to fight as a team if they are,going to stop the mischievous Loki and his,alien army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:55PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if,they are going to stop the mischievous Loki and his alien army from,enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:55PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the,mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
+
+movie-this Avengers [06/27/2019-10:55PM]
+------------------------------------------
+[Title]
+The Avengers
+[Year]
+2012
+[IMDB Rating]
+8.1/10
+[Rotten Tomatoes Rating]
+92%
+[Country]
+USA
+[Language]
+English, Russian, Hindi
+[Actors]
+Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+[Plot]
+Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the,mischievous Loki and his alien army from enslaving humanity.
+------------------------------------------
+
+spotify-this-song Lose Yourself [06/27/2019-10:58PM]
+------------------------------------------
+[Song]
+Lose Yourself - From "8 Mile" Soundtrack
+[Artists]
+Eminem
+[Album]
+Curtain Call
+[Preview Url]
+null
+------------------------------------------
